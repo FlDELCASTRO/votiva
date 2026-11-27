@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#361968" />
+    <title>VOTIVA</title>
+    <meta name="description" content="Your vote. Her moment." />
+
+    <!-- The crowned V, thicker-stroke version. The SVG is listed first for
+         browsers that take it; the 32px PNG is the fallback, and Safari
+         ignores both of those in favour of the touch icon. -->
+    <link rel="icon" type="image/svg+xml" href="/votiva/brand/votiva-icon-small.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/votiva/brand/votiva-icon-small-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/votiva/brand/votiva-icon-small-180.png" />
+
+    <!-- Telegram's own bridge. Loaded from Telegram's CDN as they require; it
+         must be a plain script tag, not a bundled dependency. -->
+    <script src="https://telegram.org/js/telegram-web-app.js?57"></script>
+
+    <!-- The first data fetch happens immediately after the bundle parses, so
+         the TLS handshake to Supabase is worth starting now rather than then.
+         On a 4G connection that is a few hundred milliseconds off first paint
+         of real content. -->
+    <link rel="preconnect" href="https://gymwwibxelxwmpclqich.supabase.co" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Kantumruy+Pro:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/votiva/assets/index-faMYRFj1.js"></script>
+    <link rel="stylesheet" crossorigin href="/votiva/assets/index-BKyqz-ST.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
